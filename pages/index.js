@@ -11,6 +11,7 @@ import NextLink from 'next/link'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
+import { BioSection, BioYear } from '../components/bio'
 
 const Page = () => {
     return (
@@ -58,6 +59,27 @@ const Page = () => {
                         </Button>
                     </NextLink>
                 </Box>
+            </Section>
+            <Section delay={0.2}>
+                <Heading as='h3' variant='section-title'>
+                    Bio
+                </Heading>
+                <BioSection>
+                    <BioYear>2003</BioYear>
+                    Born in Manaus, Brazil. 
+                </BioSection>
+                <BioSection>
+                    <BioYear>2020</BioYear>
+                    Graduated from high school and got computing technical course certificate from <Link href='https://www.fundacaomatiasmachline.org.br/'>Fundação Matias Machline</Link>.
+                </BioSection>
+                <BioSection>
+                    <BioYear>2022</BioYear>
+                    Got in <Link href='https://www.itriad.org.br/'>Itriad Systems</Link>.
+                </BioSection>
+                <Heading as='h3' variant='section-title'>
+                    I ❤️
+                </Heading>
+                    Rock songs, video games, movies, books, going to the gym and hanging out with friends 
             </Section>
         </Container>
     )
