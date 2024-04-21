@@ -1,5 +1,16 @@
-import { Container, Box, Heading, Image, useColorModeValue } from '@chakra-ui/react'
+import {
+    Container,
+    Box,
+    Heading,
+    Image,
+    useColorModeValue,
+    Link,
+    Button
+} from '@chakra-ui/react'
+import NextLink from 'next/link'
 import Section from '../components/section'
+import Paragraph from '../components/paragraph'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 
 const Page = () => {
     return (
@@ -36,7 +47,17 @@ const Page = () => {
                 <Heading as='h3' variant="section-title">
                     Work
                 </Heading>
-                <p>Paragraph</p>
+                <Paragraph>I am Computer Science student at <Link href='https://ufam.edu.br/'>Universidade Federal do Amazonas
+                </Link> and currently working at <Link href='https://www.itriad.org.br/'>Itriad Systems</Link>. I have 2 years of experience developing websites and mobile apps.
+                    I also have a technical course certificate from <Link href='https://www.fundacaomatiasmachline.org.br/'>Fundação Matias Machline</Link> where I did my graduation from high school and learned about computers.
+                </Paragraph>
+                <Box align='center' my={4}>
+                    <NextLink href='/works'>
+                        <Button rightIcon={<ChevronRightIcon />}>
+                            My portifolio
+                        </Button>
+                    </NextLink>
+                </Box>
             </Section>
         </Container>
     )
