@@ -5,13 +5,18 @@ import {
     Image,
     useColorModeValue,
     Link,
-    Button
+    SimpleGrid,
+    Icon,
+    Button,
+    List,
+    ListItem
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
+import SocialMediaData from '../constants/social-media-data'
 import { BioSection, BioYear } from '../components/bio'
 
 const Page = () => {
@@ -82,6 +87,23 @@ const Page = () => {
                         I ❤️
                     </Heading>
                     Rock songs, video games, movies, books, going to the gym and hanging out with friends
+                </Section>
+
+                <Section delay={0.3}>
+                    <Heading as='h3' variant='section-title'>
+                        On the web
+                    </Heading>
+                    <List>
+                        {SocialMediaData.map((item) => {
+                            return (
+                                <ListItem>
+                                    <Link href={item.link} target='_blank'>
+                                        <Button variant='ghost' colorScheme='teal' leftIcon={item.icon}>{item.label}</Button>
+                                    </Link>
+                                </ListItem>
+                            )
+                        })}
+                    </List>
                 </Section>
             </Container>
         </Layout>
