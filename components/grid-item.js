@@ -3,8 +3,7 @@ import Image from 'next/image'
 import {
     Box,
     Text,
-    LinkBox,
-    LinkOverlay
+    LinkBox
 } from '@chakra-ui/react'
 
 import { Global } from '@emotion/react'
