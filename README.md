@@ -6,7 +6,7 @@
 - Three.js - 3D library for JavaScript
 # Inspired by
 This project was inspired by *Takuya Matsuyama*'s YouTube video where he created from scratch this beatiful and modern portifolio using exciting technologies.
-[Click here to see the video](URL)
+[Click here to see the video]([URL](https://www.youtube.com/watch?v=bSMZgXzC9AA&t=4693s))
 
 # Images from the app
 ![Home screen](/public/images/gifs/portifolio1-ezgif.com-video-to-gif-converter.gif)
