@@ -20,7 +20,7 @@ import { BioSection, BioYear } from '../components/bio'
 const Page = () => {
     return (
         <Layout>
-            <Container>
+            <Container mt={'3rem'} >
                 <Box borderRadius='lg' bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3}>
                     <div>Hello World</div>
                 </Box>
