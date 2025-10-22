@@ -15,12 +15,14 @@ const Main = ({ children, router }) => {
             <Navbar path={router.asPath} />
 
             <Container pt={14}>
-                <Flex>
-                    {/* <NoSsr>
-                        <VoxelDog />
-                    </NoSsr> */}
+                <Box>
+                    <Flex cursor='grab' >
+                        <NoSsr>
+                            <VoxelDog />
+                        </NoSsr>
+                    </Flex>
                     {children}
-                </Flex>
+                </Box>
             </Container>
         </Box>
     );

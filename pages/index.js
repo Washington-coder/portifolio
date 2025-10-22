@@ -7,7 +7,9 @@ import {
     Link,
     Button,
     List,
-    ListItem
+    ListItem,
+    Flex,
+    Text
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import Section from '../components/section'
@@ -21,35 +23,27 @@ const Page = () => {
     return (
         <Layout>
             <Container mt={'3rem'} >
-                <Box borderRadius='lg' bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3}>
-                    <div>Hello World</div>
-                </Box>
-                <Box display={{ md: 'flex' }}>
-                    <Box flexGrow={1}>
-                        <Heading as='h2' variant='page-title'>
-                            Washington Antonio
-                        </Heading>
-                        <p>Computer Science Student / Software Developer / Mobile Developer / Web Developer</p>
+                <Flex gap={'3rem'}>
+                    <Image
+                        w={'200px'}
+                        h={'200px'}
+                        borderColor="GrayText"
+                        borderWidth={2}
+                        borderStyle="solid"
+                        borderRadius="full"
+                        src='/profile-image.jpeg'
+                        alt="Profile Image"
+                    />
+                    <Box display={{ md: 'flex' }}>
+                        <Box w='500px' >
+                            <Heading as='h2' variant='page-title'>
+                                Washington Antonio
+                            </Heading>
+                            <Text color={'gray'}> 22 years old • Software Engineer • 3 years of experience • Web developer • Full Stack </Text>
+                        </Box>
                     </Box>
-                    <Box
-                        flexShrink={0}
-                        mt={{ base: 4, md: 0 }}
-                        ml={{ md: 6 }}
-                        align='center'
-                    >
-                        <Image
-                            borderColor="whiteAlpha.800"
-                            borderWidth={2}
-                            borderStyle="solid"
-                            maxWidth="100px"
-                            display="inline-block"
-                            borderRadius="full"
-                            src='/profile-image.jpeg'
-                            alt="Profile Image"
-                        />
-                    </Box>
-                </Box>
-                <Section delay={0.1}>
+                </Flex>
+                {/* <Section delay={0.1}>
                     <Heading as='h3' variant="section-title">
                         Work
                     </Heading>
@@ -64,8 +58,8 @@ const Page = () => {
                             </Button>
                         </NextLink>
                     </Box>
-                </Section>
-                <Section delay={0.2}>
+                </Section> */}
+                {/* <Section delay={0.2}>
                     <Heading as='h3' variant='section-title'>
                         Bio
                     </Heading>
@@ -85,9 +79,9 @@ const Page = () => {
                         I ❤️
                     </Heading>
                     Rock songs, video games, movies, books, going to the gym and hanging out with friends
-                </Section>
+                </Section> */}
 
-                <Section delay={0.3}>
+                {/* <Section delay={0.3}>
                     <Heading as='h3' variant='section-title'>
                         On the web
                     </Heading>
@@ -102,7 +96,7 @@ const Page = () => {
                             )
                         })}
                     </List>
-                </Section>
+                </Section> */}
             </Container>
         </Layout>
     )
