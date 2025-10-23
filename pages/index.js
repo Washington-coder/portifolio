@@ -24,7 +24,6 @@ const Page = () => {
         <Layout>
             <Container mt={'3rem'} >
                 <Flex gap={'3rem'}>
-
                     <Box display={{ md: 'flex' }}>
                         <Box>
                             <Flex justifyContent={'center'}>
@@ -44,7 +43,7 @@ const Page = () => {
                                 <Heading as='h2' variant='page-title'>
                                     Washington Antonio
                                 </Heading>
-                                <Text color={'gray'}> 22 years old • Software Engineer • 3 years of experience • Web developer • Full Stack </Text>
+                                <Text color={'gray'}>Software Engineer • 3 years of experience • Web developer • Full Stack </Text>
                             </Box>
 
                             <Section delay={0.3}>
@@ -64,8 +63,23 @@ const Page = () => {
                                     </NextLink>
                                 </Box>
                             </Section>
-                            
+
                             <Section delay={0.3}>
+                                <Heading as='h3' variant="section-title">
+                                    🛠️ Skills
+                                </Heading>
+                                
+                            </Section>
+
+                            <Section delay={0.3}>
+                                <Heading as='h3' variant="section-title">
+                                    📌 Latest Projects
+                                </Heading>
+                                <Paragraph>
+                                </Paragraph>
+                            </Section>
+
+                            <Section delay={0.5}>
                                 <Heading as='h3' variant='section-title'>
                                     📩 Social Media
                                 </Heading>
