@@ -51,8 +51,9 @@ const Page = () => {
                                 <Heading as='h3' variant="section-title">
                                     About me
                                 </Heading>
-                                <Paragraph>I am Computer Science student at <Link href='https://ufam.edu.br/'>Universidade Federal do Amazonas
-                                </Link> and currently working at <Link href='https://www.itriad.org.br/'>Itriad Systems</Link>. I have 2 years of experience developing websites and mobile apps.
+                                <Paragraph>
+                                    I am Computer Science student at <Link href='https://ufam.edu.br/'>Universidade Federal do Amazonas
+                                    </Link> and currently working at <Link href='https://www.itriad.org.br/'>Itriad Systems</Link>. I have 2 years of experience developing websites and mobile apps.
                                     I also have a technical course certificate from <Link href='https://www.fundacaomatiasmachline.org.br/'>Fundação Matias Machline</Link> where I did my graduation from high school and learned about computers.
                                 </Paragraph>
                                 <Box align='center' my={4}>
@@ -63,30 +64,10 @@ const Page = () => {
                                     </NextLink>
                                 </Box>
                             </Section>
-                            <Section delay={0.5}>
-                                <Heading as='h3' variant='section-title'>
-                                    Bio
-                                </Heading>
-                                <BioSection>
-                                    <BioYear>2003</BioYear>
-                                    Born in Manaus, Brazil.
-                                </BioSection>
-                                <BioSection>
-                                    <BioYear>2020</BioYear>
-                                    Graduated from high school and got computing technical course certificate from <Link href='https://www.fundacaomatiasmachline.org.br/'>Fundação Matias Machline</Link>.
-                                </BioSection>
-                                <BioSection>
-                                    <BioYear>2022</BioYear>
-                                    Got in <Link href='https://www.itriad.org.br/'>Itriad Systems</Link>.
-                                </BioSection>
-                                <Heading as='h3' variant='section-title'>
-                                    I ❤️
-                                </Heading>
-                                Rock songs, video games, movies, books, going to the gym and hanging out with friends
-                            </Section>
+                            
                             <Section delay={0.3}>
                                 <Heading as='h3' variant='section-title'>
-                                    On the web
+                                    📩 Social Media
                                 </Heading>
                                 <List>
                                     {SocialMediaData.map((item) => {
