@@ -95,15 +95,19 @@ const Page = () => {
                                     📩 Social Media
                                 </Heading>
                                 <List>
-                                    {SocialMediaData.map((item) => {
-                                        return (
-                                            <ListItem>
-                                                <Link href={item.link} target='_blank'>
-                                                    <Button variant='ghost' colorScheme='teal' leftIcon={item.icon}>{item.label}</Button>
-                                                </Link>
-                                            </ListItem>
-                                        )
-                                    })}
+                                    <Grid marginY='3rem' templateColumns="repeat(auto-fit, minmax(10rem, 1fr))" gap={6}>
+                                        {SocialMediaData.map((item) => {
+                                            return (
+                                                <GridItem key={item.link} >
+                                                    <ListItem>
+                                                        <Link href={item.link} target='_blank'>
+                                                            <Button variant='ghost' colorScheme='teal' leftIcon={item.icon}>{item.label}</Button>
+                                                        </Link>
+                                                    </ListItem>
+                                                </GridItem>
+                                            )
+                                        })}
+                                    </Grid>
                                 </List>
                             </Section>
                         </Box>
