@@ -9,7 +9,10 @@ import {
     List,
     ListItem,
     Flex,
-    Text
+    Text,
+    Grid,
+    GridItem,
+    Icon
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import Section from '../components/section'
@@ -17,7 +20,7 @@ import Paragraph from '../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
 import SocialMediaData from '../constants/social-media-data'
-import { BioSection, BioYear } from '../components/bio'
+import TECH_SKILLS_DATA from '../constants/tech-skills-data'
 
 const Page = () => {
     return (
@@ -68,7 +71,15 @@ const Page = () => {
                                 <Heading as='h3' variant="section-title">
                                     🛠️ Skills
                                 </Heading>
-                                
+                                <Grid marginY='3rem' templateColumns="repeat(auto-fit, minmax(120px, 1fr))" gap={6}>
+                                    {TECH_SKILLS_DATA.map((item) => (
+                                        <GridItem key={item.name} textAlign="center">
+                                            {item.icon}
+                                            <Text fontWeight={'bold'} mt={2}>{item.name}</Text>
+                                        </GridItem>
+                                    ))}
+                                </Grid>
+
                             </Section>
 
                             <Section delay={0.3}>
