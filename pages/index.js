@@ -54,7 +54,7 @@ const Page = () => {
 
                             <Box mb='2rem' mt='2rem' w='100%' >
                                 <Heading as='h2' variant='page-title'>
-                                    Washington Antonio
+                                    Washington Moreno
                                 </Heading>
                                 <Text color={'gray'}>Software Engineer • 3+ years of experience • Web developer • Full Stack • IT Technician</Text>
                             </Box>
@@ -64,7 +64,7 @@ const Page = () => {
                                     😎 About me
                                 </Heading>
                                 <Paragraph>
-                                    I’m a Software Developer with 3+ years of experience building real-world applications using <HighlightBox>ReactJS</HighlightBox>, <HighlightBox>Next.js</HighlightBox> <HighlightBox>Node.js</HighlightBox>, <HighlightBox>TypeScript</HighlightBox> <HighlightBox>JavaScript</HighlightBox> , <HighlightBox>Express.js</HighlightBox>, <HighlightBox>MongoDB</HighlightBox>, and <HighlightBox>PostgreSQL</HighlightBox>.
+                                    I’m a Software Developer with 3+ years of experience building real-world applications using <HighlightBox>ReactJS</HighlightBox>, <HighlightBox>Next.js</HighlightBox>, <HighlightBox>Node.js</HighlightBox>, <HighlightBox>TypeScript</HighlightBox>, <HighlightBox>JavaScript</HighlightBox>, <HighlightBox>Express.js</HighlightBox>, <HighlightBox>MongoDB</HighlightBox>, and <HighlightBox>PostgreSQL</HighlightBox>.
                                     I’m passionate about writing clean, scalable, and maintainable code following modern best practices. <br /><br />
 
                                     I have worked in agile environments (<strong>Scrum</strong>, <strong>Kanban</strong>), collaborating with cross-functional teams to deliver efficient, user-friendly solutions.
