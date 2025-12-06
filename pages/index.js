@@ -22,6 +22,7 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article'
 import SocialMediaData from '../constants/social-media-data'
 import TECH_SKILLS_DATA from '../constants/tech-skills-data'
+import profileImage from '../public/images/profile-image.jpeg'
 
 const Page = () => {
 
@@ -47,7 +48,7 @@ const Page = () => {
                                     borderWidth={2}
                                     borderStyle="solid"
                                     borderRadius="full"
-                                    src='/profile-image.jpeg'
+                                    src={profileImage.src}
                                     alt="Profile Image"
                                 />
                             </Flex>
