@@ -17,7 +17,7 @@ const Main = ({ children, router }) => {
             <Container pt={14}>
                 <Box>
                     {children}
-                    <Flex cursor='grab' >
+                    <Flex mt='4rem' cursor='grab' >
                         <NoSsr>
                             <VoxelDog />
                         </NoSsr>
