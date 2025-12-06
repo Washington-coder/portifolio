@@ -17,7 +17,7 @@ import { SiMongodb } from "react-icons/si";
 
 
 const LogoIcon = ({ icon }) => {
-    return <Icon color={'blue.200'} boxSize={'3rem'} as={icon} />
+    return <Icon boxSize={'3rem'} as={icon} />
 }
 
 const getLogoJavaScript = () => <LogoIcon icon={IoLogoJavascript} />

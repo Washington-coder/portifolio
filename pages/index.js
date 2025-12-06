@@ -28,7 +28,7 @@ const Page = () => {
 
     const HighlightBox = ({ children }) => {
         return (
-            <Badge display={'inline'} colorScheme='green'>
+            <Badge display={'inline'} colorScheme='purple'>
                 {children}
             </Badge>
         );
@@ -57,7 +57,9 @@ const Page = () => {
                                 <Heading as='h2' variant='page-title'>
                                     Washington Moreno
                                 </Heading>
-                                <Text color={'gray'}>Software Engineer • 3+ years of experience • Web developer • Full Stack • IT Technician</Text>
+                                <Flex mt={'1rem'} textAlign='center'>
+                                    <p textAlign='center' color={'whitesmoke'}>Software Engineer • 3+ years of experience • Web developer • Full Stack • IT Technician</p>
+                                </Flex>
                             </Box>
 
                             <Section delay={0.3}>
@@ -92,8 +94,10 @@ const Page = () => {
                                 </Heading>
                                 <Grid marginY='3rem' templateColumns="repeat(auto-fit, minmax(120px, 1fr))" gap={6}>
                                     {TECH_SKILLS_DATA.map((item) => (
-                                        <GridItem key={item.name} textAlign="center">
-                                            {item.icon}
+                                        <GridItem key={item.name} textAlign="center" >
+                                            <Button padding={'2rem'}>
+                                                {item.icon}
+                                            </Button>
                                             <Text fontWeight={'bold'} mt={2}>{item.name}</Text>
                                         </GridItem>
                                     ))}
