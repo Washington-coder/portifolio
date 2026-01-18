@@ -22,7 +22,7 @@ const Works = () => {
 
                 <SimpleGrid columns={[1, 1, 2]} gap={6}>
                     <Section>
-                        <Link href='https://spa-escreve-ai-next.vercel.app/' target='_blank' >
+                        <Link href='https://spa-escreve-ai-next.vercel.app/' color={'white'} target='_blank' >
                             <Box w='100%' align='center'>
                                 <Image
                                     src={smartRedacoes}
