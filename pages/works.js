@@ -2,26 +2,42 @@ import {
     Container,
     Heading,
     SimpleGrid,
-    Divider
+    Divider,
+    Box,
+    Text,
+    Link
 } from '@chakra-ui/react'
+import Image from 'next/image'
 import Section from '../components/section'
-import { WorkGridItem } from '../components/grid-item'
 import Layout from '../components/layouts/article'
-import thumbInkdrop from '../public/images/works/inkdrop_eyecatch.png'
+import smartRedacoes from '../public/images/works/smart_reda.png'
 
 const Works = () => {
     return (
         <Layout>
-            <Container>
+            <Container mt={'5rem'} >
                 <Heading as="h3" fontSize={20} mb={4}>
                     Works
                 </Heading>
 
                 <SimpleGrid columns={[1, 1, 2]} gap={6}>
                     <Section>
-                        <WorkGridItem id='inkdrop' title='Inkdrop' thumbnail={thumbInkdrop}>
-                            A markdown note-taking app
-                        </WorkGridItem>
+                        <Link href='https://spa-escreve-ai-next.vercel.app/' target='_blank' >
+                            <Box w='100%' align='center'>
+                                <Image
+                                    src={smartRedacoes}
+                                    alt='Smart Redações'
+                                    className='grid-item-thumbnail'
+                                    placeholder='blur'
+                                />
+                                <Text mt={2} fontSize={20}>
+                                    Smart Redações
+                                </Text>
+                                <Text fontSize={14}>
+                                    Essay correction powered with AI
+                                </Text>
+                            </Box>
+                        </Link>
                     </Section>
                 </SimpleGrid>
             </Container>
