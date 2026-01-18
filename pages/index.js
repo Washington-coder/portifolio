@@ -95,7 +95,7 @@ const Page = () => {
                                 <Grid marginY='3rem' templateColumns="repeat(auto-fit, minmax(120px, 1fr))" gap={6}>
                                     {TECH_SKILLS_DATA.map((item) => (
                                         <GridItem key={item.name} textAlign="center" >
-                                            <Button padding={'2rem'}>
+                                            <Button borderRadius={'16rem'} padding={'2rem'}>
                                                 {item.icon}
                                             </Button>
                                             <Text fontWeight={'bold'} mt={2}>{item.name}</Text>
