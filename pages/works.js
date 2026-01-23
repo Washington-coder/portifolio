@@ -11,6 +11,7 @@ import Image from 'next/image'
 import Section from '../components/section'
 import Layout from '../components/layouts/article'
 import smartRedacoes from '../public/images/works/smart_reda.png'
+import igniteFeed from '../public/images/works/ignite-feed-bg.png'
 
 const Works = () => {
     return (
@@ -35,6 +36,24 @@ const Works = () => {
                                 </Text>
                                 <Text fontSize={14}>
                                     Essay correction powered with AI
+                                </Text>
+                            </Box>
+                        </Link>
+                    </Section>
+                    <Section>
+                        <Link href='https://washington-coder.github.io/ignite-feed/' color={'white'} target='_blank' >
+                            <Box w='100%' align='center'>
+                                <Image
+                                    src={igniteFeed}
+                                    alt='Ignite Feed'
+                                    className='grid-item-thumbnail'
+                                    placeholder='blur'
+                                />
+                                <Text mt={2} fontSize={20}>
+                                    Ignite feed
+                                </Text>
+                                <Text fontSize={14}>
+                                    Simple project that simulates a feed of a social network
                                 </Text>
                             </Box>
                         </Link>
