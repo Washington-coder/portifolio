@@ -12,6 +12,7 @@ import Section from '../components/section'
 import Layout from '../components/layouts/article'
 import smartRedacoes from '../public/images/works/smart_reda.png'
 import igniteFeed from '../public/images/works/ignite-feed-bg.png'
+import igniteTimer from '../public/images/works/ignite-timer.png'
 
 const Works = () => {
     return (
@@ -54,6 +55,24 @@ const Works = () => {
                                 </Text>
                                 <Text fontSize={14}>
                                     Simple project that simulates a feed of a social network
+                                </Text>
+                            </Box>
+                        </Link>
+                    </Section>
+                    <Section>
+                        <Link href='https://washington-coder.github.io/ignite-timer/' color={'white'} target='_blank' >
+                            <Box w='100%' align='center'>
+                                <Image
+                                    src={igniteTimer}
+                                    alt='Ignite Timer'
+                                    className='grid-item-thumbnail'
+                                    placeholder='blur'
+                                />
+                                <Text mt={2} fontSize={20}>
+                                    Ignite Timer
+                                </Text>
+                                <Text fontSize={14}>
+                                    A Pomodoro-style website for task management and timing.
                                 </Text>
                             </Box>
                         </Link>
